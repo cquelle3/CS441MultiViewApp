@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		448DBA5325E69EFC00644653 /* SwordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448DBA5225E69EFC00644653 /* SwordViewController.swift */; };
+		448DBA5525E6A9F200644653 /* EventManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 448DBA5425E6A9F200644653 /* EventManagement.swift */; };
 		44BEC30F25E3FD58009FACB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BEC30E25E3FD58009FACB3 /* AppDelegate.swift */; };
 		44BEC31125E3FD58009FACB3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BEC31025E3FD58009FACB3 /* SceneDelegate.swift */; };
 		44BEC31325E3FD58009FACB3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BEC31225E3FD58009FACB3 /* ViewController.swift */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		448DBA5225E69EFC00644653 /* SwordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwordViewController.swift; sourceTree = "<group>"; };
+		448DBA5425E6A9F200644653 /* EventManagement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventManagement.swift; sourceTree = "<group>"; };
 		44BEC30B25E3FD58009FACB3 /* MultiView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MultiView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44BEC30E25E3FD58009FACB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		44BEC31025E3FD58009FACB3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,6 +113,7 @@
 				44BEC33E25E3FE44009FACB3 /* ForestViewController.swift */,
 				44BEC34025E404F5009FACB3 /* ThirdViewController.swift */,
 				448DBA5225E69EFC00644653 /* SwordViewController.swift */,
+				448DBA5425E6A9F200644653 /* EventManagement.swift */,
 				44BEC31425E3FD58009FACB3 /* Main.storyboard */,
 				44BEC31725E3FD59009FACB3 /* Assets.xcassets */,
 				44BEC31925E3FD59009FACB3 /* LaunchScreen.storyboard */,
@@ -272,6 +275,7 @@
 				44BEC33F25E3FE44009FACB3 /* ForestViewController.swift in Sources */,
 				44BEC31325E3FD58009FACB3 /* ViewController.swift in Sources */,
 				44BEC34125E404F5009FACB3 /* ThirdViewController.swift in Sources */,
+				448DBA5525E6A9F200644653 /* EventManagement.swift in Sources */,
 				44BEC30F25E3FD58009FACB3 /* AppDelegate.swift in Sources */,
 				44BEC31125E3FD58009FACB3 /* SceneDelegate.swift in Sources */,
 			);
