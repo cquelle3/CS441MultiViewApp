@@ -1,14 +1,14 @@
 //
-//  SecondViewController.swift
+//  SwordViewController.swift
 //  MultiView
 //
-//  Created by Colin Quelle on 2/22/21.
+//  Created by Colin Quelle on 2/24/21.
 //  Copyright © 2021 Colin Quelle. All rights reserved.
 //
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class SwordViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
