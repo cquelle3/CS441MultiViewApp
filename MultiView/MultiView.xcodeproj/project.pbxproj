@@ -28,6 +28,7 @@
 		44BEC33125E3FD59009FACB3 /* MultiViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BEC33025E3FD59009FACB3 /* MultiViewUITests.swift */; };
 		44BEC33F25E3FE44009FACB3 /* ForestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BEC33E25E3FE44009FACB3 /* ForestViewController.swift */; };
 		44BEC34125E404F5009FACB3 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44BEC34025E404F5009FACB3 /* ThirdViewController.swift */; };
+		44DAA1C225E7653C004465FF /* ya9996rwfdoy.png in Resources */ = {isa = PBXBuildFile; fileRef = 44DAA1C125E7653C004465FF /* ya9996rwfdoy.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		44BEC33225E3FD59009FACB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		44BEC33E25E3FE44009FACB3 /* ForestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForestViewController.swift; sourceTree = "<group>"; };
 		44BEC34025E404F5009FACB3 /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		44DAA1C125E7653C004465FF /* ya9996rwfdoy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ya9996rwfdoy.png; path = ../../../../Desktop/ya9996rwfdoy.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,6 +140,7 @@
 				448DBA5425E6A9F200644653 /* EventManagement.swift */,
 				44BEC31425E3FD58009FACB3 /* Main.storyboard */,
 				4490F52F25E76190009BD0FA /* fposter,small,wall_texture,product,750x1000.u7.jpg */,
+				44DAA1C125E7653C004465FF /* ya9996rwfdoy.png */,
 				4490F52725E75C63009BD0FA /* 6adb8dda495bacc69d0363c0dfe46d9d.png */,
 				4490F52525E75B85009BD0FA /* pixel-key.png */,
 				4490F52325E75A8B009BD0FA /* e37e525c4bf9d0b.png */,
@@ -276,6 +279,7 @@
 				4490F52825E75C63009BD0FA /* 6adb8dda495bacc69d0363c0dfe46d9d.png in Resources */,
 				44BEC31B25E3FD59009FACB3 /* LaunchScreen.storyboard in Resources */,
 				44BEC31825E3FD59009FACB3 /* Assets.xcassets in Resources */,
+				44DAA1C225E7653C004465FF /* ya9996rwfdoy.png in Resources */,
 				4490F53025E76190009BD0FA /* fposter,small,wall_texture,product,750x1000.u7.jpg in Resources */,
 				44BEC31625E3FD58009FACB3 /* Main.storyboard in Resources */,
 				4490F52C25E75D83009BD0FA /* 64f3j9evqdoitxo9otol.png in Resources */,
