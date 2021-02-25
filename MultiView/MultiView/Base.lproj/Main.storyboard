@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="It's a sword!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ba-mV-GRG">
-                                <rect key="frame" x="161" y="208" width="92" height="21"/>
+                                <rect key="frame" x="153" y="172" width="92" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -24,9 +24,12 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tvq-fG-Ddl">
-                                <rect key="frame" x="185" y="507" width="45" height="30"/>
+                                <rect key="frame" x="185" y="559" width="45" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Take it"/>
+                                <connections>
+                                    <action selector="takeSwordWith_sender:" destination="ElE-LE-5EP" eventType="touchUpInside" id="NyN-dF-LPV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gq6-2u-BmI">
                                 <rect key="frame" x="178" y="832" width="58" height="30"/>
@@ -36,14 +39,23 @@
                                     <segue destination="JCM-Wp-YXp" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="Hjh-Nz-LtL"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="e37e525c4bf9d0b.png" translatesAutoresizingMaskIntoConstraints="NO" id="I7a-HG-INr">
+                                <rect key="frame" x="133" y="319" width="149" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="QBh-GG-fCe"/>
                     </view>
+                    <connections>
+                        <outlet property="swordButton" destination="tvq-fG-Ddl" id="tpv-Yb-8y0"/>
+                        <outlet property="swordImage" destination="I7a-HG-INr" id="2BR-nM-xVj"/>
+                        <outlet property="swordLabel" destination="8Ba-mV-GRG" id="ker-ZT-N3A"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iy0-wL-Cdi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1441" y="238"/>
+            <point key="canvasLocation" x="-1442.0289855072465" y="237.72321428571428"/>
         </scene>
         <!--Third View Controller-->
         <scene sceneID="aWD-5L-Nt9">
@@ -148,6 +160,10 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="6adb8dda495bacc69d0363c0dfe46d9d.png" translatesAutoresizingMaskIntoConstraints="NO" id="enu-fb-io8">
+                                <rect key="frame" x="9" y="343" width="396" height="211"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.98892568579799967" green="1" blue="0.60567585058125983" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="eUw-JB-cDD"/>
@@ -155,12 +171,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ska-ah-eKI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="32" y="-2779"/>
+            <point key="canvasLocation" x="31.884057971014496" y="-2779.0178571428569"/>
         </scene>
-        <!--View Controller-->
+        <!--Wizard View Controller-->
         <scene sceneID="keG-lL-e2h">
             <objects>
-                <viewController id="i1S-FQ-5iu" sceneMemberID="viewController">
+                <viewController id="i1S-FQ-5iu" customClass="WizardViewController" customModule="MultiView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="kKC-uE-k4U">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -178,6 +194,9 @@
                                 <state key="normal" title="Attack!!!!!!!">
                                     <color key="titleColor" red="0.65881002150000001" green="0.94921494920000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="attackWizardWith_sender:" destination="i1S-FQ-5iu" eventType="touchUpInside" id="QCH-tw-lhM"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bvi-6z-jNM">
                                 <rect key="frame" x="176" y="392" width="62" height="30"/>
@@ -189,19 +208,29 @@
                                     <segue destination="HR5-jW-eZt" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="sIT-9s-md1"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fposter,small,wall_texture,product,750x1000.u7.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="ZrA-yU-mV2">
+                                <rect key="frame" x="30" y="290" width="354" height="188"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.21994739770889282" green="0.61542540788650513" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="YiG-X8-u7V"/>
                     </view>
+                    <connections>
+                        <outlet property="attackButton" destination="QYV-iB-gf3" id="B2C-Ut-bH6"/>
+                        <outlet property="continueButton" destination="bvi-6z-jNM" id="OlP-Fr-1uZ"/>
+                        <outlet property="wizardImage" destination="ZrA-yU-mV2" id="VdB-Qk-nY4"/>
+                        <outlet property="wizardLabel" destination="Fjg-8F-aCd" id="yfg-uS-a8o"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="CBi-h5-KC3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="39.130434782608695" y="-2067.1875"/>
         </scene>
-        <!--View Controller-->
+        <!--Castle Doors View Controller-->
         <scene sceneID="nod-3i-APK">
             <objects>
-                <viewController id="NlE-VP-5qJ" sceneMemberID="viewController">
+                <viewController id="NlE-VP-5qJ" customClass="CastleDoorsViewController" customModule="MultiView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oeL-Mp-Myj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -229,9 +258,12 @@
                                 <state key="normal" title="Unlock">
                                     <color key="titleColor" red="0.65881002150000001" green="0.94921494920000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="unlockWith_sender:" destination="NlE-VP-5qJ" eventType="touchUpInside" id="QxV-H2-PhV"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0yb-bN-cY1">
-                                <rect key="frame" x="189" y="433" width="37" height="30"/>
+                                <rect key="frame" x="189" y="380" width="37" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Enter">
                                     <color key="titleColor" red="0.65881002150000001" green="0.94921494920000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -240,19 +272,29 @@
                                     <segue destination="i1S-FQ-5iu" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="ZhZ-zF-Fgh"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="ya9996rwfdoy.png" translatesAutoresizingMaskIntoConstraints="NO" id="W4e-E4-Kdd">
+                                <rect key="frame" x="41" y="307" width="332" height="177"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.32094776630401611" green="0.61544442176818848" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="epB-5O-z22"/>
                     </view>
+                    <connections>
+                        <outlet property="doorImage" destination="W4e-E4-Kdd" id="75m-6L-sUr"/>
+                        <outlet property="doorLabel" destination="o9h-m4-47a" id="qB6-Ec-USz"/>
+                        <outlet property="enterButton" destination="0yb-bN-cY1" id="fb4-Go-LUB"/>
+                        <outlet property="unlockButton" destination="b27-Z9-py6" id="KVc-oM-vpK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZkK-wl-Nf2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="37.681159420289859" y="-1383.4821428571429"/>
         </scene>
-        <!--View Controller-->
+        <!--Monster View Controller-->
         <scene sceneID="V0q-oR-Z4E">
             <objects>
-                <viewController id="1LD-aZ-SOs" sceneMemberID="viewController">
+                <viewController id="1LD-aZ-SOs" customClass="MonsterViewController" customModule="MultiView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="J29-cM-OTw">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -270,6 +312,9 @@
                                 <state key="normal" title="Attack!!">
                                     <color key="titleColor" red="0.65881002148888368" green="0.94921494920016036" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <action selector="attackWith_sender:" destination="1LD-aZ-SOs" eventType="touchUpInside" id="TgB-Um-Bge"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="03G-Ym-Kbb">
                                 <rect key="frame" x="178" y="832" width="58" height="30"/>
@@ -277,9 +322,12 @@
                                 <state key="normal" title="Go Back">
                                     <color key="titleColor" red="0.65881002150000001" green="0.94921494920000005" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 </state>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="cku-bb-lUr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUE-tN-97r">
-                                <rect key="frame" x="176" y="402" width="62" height="30"/>
+                                <rect key="frame" x="176" y="341" width="62" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Continue">
                                     <color key="titleColor" red="0.65881002148888368" green="0.94921494920016036" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -288,10 +336,20 @@
                                     <segue destination="NlE-VP-5qJ" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="haQ-EE-4dM"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="64f3j9evqdoitxo9otol.png" translatesAutoresizingMaskIntoConstraints="NO" id="Bu0-lZ-6cl">
+                                <rect key="frame" x="63" y="279" width="288" height="154"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.38320502697031122" green="0.61664637200393702" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="eBR-zv-phc"/>
                     </view>
+                    <connections>
+                        <outlet property="attackButton" destination="w5c-65-pfn" id="hl3-F4-VQV"/>
+                        <outlet property="continueButton" destination="XUE-tN-97r" id="jnh-Xy-nOt"/>
+                        <outlet property="monsterImage" destination="Bu0-lZ-6cl" id="6lk-68-PEI"/>
+                        <outlet property="monsterLabel" destination="KIU-fn-PsM" id="P16-FM-0Zl"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PIu-4D-bRg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -386,10 +444,10 @@
             </objects>
             <point key="canvasLocation" x="2022" y="-333"/>
         </scene>
-        <!--View Controller-->
+        <!--Key View Controller-->
         <scene sceneID="PwC-rb-YQt">
             <objects>
-                <viewController id="yYE-aZ-K0Q" sceneMemberID="viewController">
+                <viewController id="yYE-aZ-K0Q" customClass="KeyViewController" customModule="MultiView" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="I1Q-4o-LLq">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -405,6 +463,9 @@
                                 <rect key="frame" x="185" y="510" width="45" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Take it"/>
+                                <connections>
+                                    <action selector="takeKeyWith_sender:" destination="yYE-aZ-K0Q" eventType="touchUpInside" id="IuV-PU-Tuj"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qnT-Oh-L6o">
                                 <rect key="frame" x="163" y="644" width="88" height="30"/>
@@ -414,10 +475,19 @@
                                     <segue destination="BYZ-38-t0r" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="coverVertical" id="Ezh-FR-bhd"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pixel-key.png" translatesAutoresizingMaskIntoConstraints="NO" id="gJ8-3E-Dy7">
+                                <rect key="frame" x="98" y="317" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="0.024612648412585258" green="1" blue="0.41947615146636963" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <viewLayoutGuide key="safeArea" id="iSP-OU-R8w"/>
                     </view>
+                    <connections>
+                        <outlet property="keyButton" destination="XsO-X5-fhM" id="mDI-FY-qhf"/>
+                        <outlet property="keyImage" destination="gJ8-3E-Dy7" id="BLt-9V-m01"/>
+                        <outlet property="keyLabel" destination="NeF-Gd-Oyg" id="nFL-BW-WlL"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="E0j-xo-dIS" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -504,11 +574,19 @@
             <point key="canvasLocation" x="2744.9275362318845" y="-333.48214285714283"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="64f3j9evqdoitxo9otol.png" width="380" height="280"/>
+        <image name="6adb8dda495bacc69d0363c0dfe46d9d.png" width="250" height="182"/>
+        <image name="e37e525c4bf9d0b.png" width="1184" height="1184"/>
+        <image name="fposter,small,wall_texture,product,750x1000.u7.jpg" width="503" height="559"/>
+        <image name="pixel-key.png" width="1024" height="512"/>
+        <image name="ya9996rwfdoy.png" width="1000" height="1000"/>
+    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="b2w-Cf-5tO"/>
         <segue reference="kHQ-qT-i51"/>
         <segue reference="pRH-un-sGm"/>
-        <segue reference="Ezh-FR-bhd"/>
+        <segue reference="cku-bb-lUr"/>
         <segue reference="Hjh-Nz-LtL"/>
     </inferredMetricsTieBreakers>
 </document>

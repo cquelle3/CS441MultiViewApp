@@ -10,13 +10,28 @@ import UIKit
 
 class SwordViewController: UIViewController {
 
+    @IBOutlet var swordButton: UIButton!;
+    @IBOutlet var swordLabel: UILabel!;
+    @IBOutlet var swordImage: UIImageView!;
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+        if(EventManagement.manage.getSword() == true){
+            swordLabel.isHidden = true;
+            swordButton.isHidden = true;
+            swordImage.isHidden = true;
+        }
     }
     
+    @IBAction func takeSword(_sender: UIButton){
+        swordButton.isHidden = true;
+        swordLabel.isHidden = true;
+        swordImage.isHidden = true;
+        EventManagement.manage.setSword(val: true);
+    }
 
+    
     /*
     // MARK: - Navigation
 

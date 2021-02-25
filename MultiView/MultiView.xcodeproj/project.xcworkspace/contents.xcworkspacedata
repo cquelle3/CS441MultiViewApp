@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:MultiView.xcodeproj">
+      location = "group:../../../../Desktop/ya9996rwfdoy.png">
+   </FileRef>
+   <FileRef
+      location = "group:../../../../Desktop/64f3j9evqdoitxo9otol.png">
+   </FileRef>
+   <FileRef
+      location = "self:">
    </FileRef>
 </Workspace>
