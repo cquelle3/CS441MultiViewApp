@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4408490125E9829D00BCF7FF /* ya9996rwfdoy.png in Resources */ = {isa = PBXBuildFile; fileRef = 4408490025E9829C00BCF7FF /* ya9996rwfdoy.png */; };
 		4436490E25E97F1E0034D284 /* 6adb8dda495bacc69d0363c0dfe46d9d.png in Resources */ = {isa = PBXBuildFile; fileRef = 4436490C25E97F1E0034D284 /* 6adb8dda495bacc69d0363c0dfe46d9d.png */; };
 		4436490F25E97F1E0034D284 /* 64f3j9evqdoitxo9otol.png in Resources */ = {isa = PBXBuildFile; fileRef = 4436490D25E97F1E0034D284 /* 64f3j9evqdoitxo9otol.png */; };
 		4436491525E97F610034D284 /* fire1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4436491025E97F5F0034D284 /* fire1.png */; };
@@ -51,6 +52,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		4408490025E9829C00BCF7FF /* ya9996rwfdoy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = ya9996rwfdoy.png; sourceTree = "<group>"; };
 		4436490C25E97F1E0034D284 /* 6adb8dda495bacc69d0363c0dfe46d9d.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 6adb8dda495bacc69d0363c0dfe46d9d.png; sourceTree = "<group>"; };
 		4436490D25E97F1E0034D284 /* 64f3j9evqdoitxo9otol.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 64f3j9evqdoitxo9otol.png; sourceTree = "<group>"; };
 		4436491025E97F5F0034D284 /* fire1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fire1.png; sourceTree = "<group>"; };
@@ -144,6 +146,7 @@
 				448DBA5425E6A9F200644653 /* EventManagement.swift */,
 				44BEC31425E3FD58009FACB3 /* Main.storyboard */,
 				44BEC31725E3FD59009FACB3 /* Assets.xcassets */,
+				4408490025E9829C00BCF7FF /* ya9996rwfdoy.png */,
 				4436491A25E97F6D0034D284 /* pixel-key.png */,
 				4436491425E97F610034D284 /* download.png */,
 				4436491325E97F600034D284 /* e37e525c4bf9d0b.png */,
@@ -285,6 +288,7 @@
 				44BEC31B25E3FD59009FACB3 /* LaunchScreen.storyboard in Resources */,
 				44BEC31825E3FD59009FACB3 /* Assets.xcassets in Resources */,
 				4436491525E97F610034D284 /* fire1.png in Resources */,
+				4408490125E9829D00BCF7FF /* ya9996rwfdoy.png in Resources */,
 				4436491825E97F610034D284 /* e37e525c4bf9d0b.png in Resources */,
 				4436491B25E97F6E0034D284 /* pixel-key.png in Resources */,
 				4436491625E97F610034D284 /* fire2.png in Resources */,
