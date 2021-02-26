@@ -43,6 +43,14 @@
                                 <rect key="frame" x="133" y="319" width="149" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fire1.png" translatesAutoresizingMaskIntoConstraints="NO" id="PdU-29-MMP">
+                                <rect key="frame" x="207" y="280" width="207" height="207"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fire2.png" translatesAutoresizingMaskIntoConstraints="NO" id="LOG-CU-jqD">
+                                <rect key="frame" x="0.0" y="280" width="207" height="207"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="QBh-GG-fCe"/>
@@ -578,6 +586,8 @@
         <image name="64f3j9evqdoitxo9otol.png" width="380" height="280"/>
         <image name="6adb8dda495bacc69d0363c0dfe46d9d.png" width="250" height="182"/>
         <image name="e37e525c4bf9d0b.png" width="1184" height="1184"/>
+        <image name="fire1.png" width="340" height="350"/>
+        <image name="fire2.png" width="340" height="350"/>
         <image name="fposter,small,wall_texture,product,750x1000.u7.jpg" width="503" height="559"/>
         <image name="pixel-key.png" width="1024" height="512"/>
         <image name="ya9996rwfdoy.png" width="1000" height="1000"/>
